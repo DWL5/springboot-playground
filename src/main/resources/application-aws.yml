@@ -9,3 +9,6 @@ cloudfront:
 s3:
   bucekt: ENC(YbSPYfi6ONuDO86rbtQuOXPsSMY1JyM+/aLapOol8n8=)
 
+jasypt:
+  encryptor:
+    password: pw

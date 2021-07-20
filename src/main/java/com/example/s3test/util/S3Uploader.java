@@ -32,7 +32,7 @@ public class S3Uploader implements Uploader {
     public String upload(MultipartFile multipartFile) throws IOException {
         File file = convertToFile(multipartFile);
         String fileName = System.currentTimeMillis() + Base64.encodeAsString(multipartFile.getName().getBytes()) + multipartFile.getContentType();
-        amazonS3Client.putObject(new PutObjectRequest(s3UploadComponent.getBucket(), fileName, file));
+        amazonS3Client.putObject(new PutObjectRequest(bucket, fileName, file));
         file.delete();
         return cloudfrontUrl + "/" + fileName;
     }

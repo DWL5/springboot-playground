@@ -1,14 +1,14 @@
 cloud:
   aws:
     region:
-      static: ap-northeast-2
+      static: ap-northeaset-2
     stack:
       auto: false
 cloudfront:
     url: ENC(mG1Q8Ter2tB/ByJmr7LChbvQJXBbsjToV/TOE8urPsKQZI1U0slIw7y+ElhiZeTx)
 s3:
-  bucket: ENC(YbSPYfi6ONuDO86rbtQuOXPsSMY1JyM+/aLapOol8n8=)
+  bucekt: ENC(YbSPYfi6ONuDO86rbtQuOXPsSMY1JyM+/aLapOol8n8=)
 
 jasypt:
   encryptor:
-    password: pw
+    password: hello

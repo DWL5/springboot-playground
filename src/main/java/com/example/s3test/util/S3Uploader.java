@@ -1,16 +1,17 @@
 package com.example.s3test.util;
 
 import com.amazonaws.services.s3.AmazonS3Client;
-import com.amazonaws.services.s3.model.CannedAccessControlList;
 import com.amazonaws.services.s3.model.PutObjectRequest;
 import com.amazonaws.util.Base64;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+@Component
 public class S3Uploader implements Uploader {
     private final AmazonS3Client amazonS3Client;
     private final S3UploadComponent s3UploadComponent;

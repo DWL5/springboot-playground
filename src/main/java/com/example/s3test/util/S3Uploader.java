@@ -20,7 +20,7 @@ public class S3Uploader implements Uploader {
     @Value("${s3.bucket}")
     private String bucket;
 
-    @Value(("cloudfront.url"))
+    @Value(("${cloudfront.url}"))
     private String cloudfrontUrl;
 
     public S3Uploader(@Qualifier("awsS3Client") AmazonS3 amazonS3Client, S3UploadComponent s3UploadComponent) {
@@ -30,6 +30,7 @@ public class S3Uploader implements Uploader {
 
     @Override
     public String upload(MultipartFile multipartFile) throws IOException {
+        System.out.println("bucket : " + bucket);
         File file = convertToFile(multipartFile);
         String fileName = System.currentTimeMillis() + Base64.encodeAsString(multipartFile.getName().getBytes()) + multipartFile.getContentType();
         amazonS3Client.putObject(new PutObjectRequest(bucket, fileName, file));

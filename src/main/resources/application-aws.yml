@@ -1,7 +1,7 @@
 cloud:
   aws:
     region:
-      static: ap-northeaset-2
+      static: ap-northeast-2
     stack:
       auto: false
 cloudfront:

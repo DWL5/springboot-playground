@@ -9,3 +9,4 @@
 
 2. 의존성 추가
    - Spring-cloud-starter-aws
+

@@ -1,5 +1,21 @@
 # springboot-board
 
+
+## 목적
+
+- FullStack 체험 해 보기 
+
+## Backend
+
+- SpringBoot
+- H2
+- JPA
+
+## Frontend
+
+- React
+
+
 ## Create 기능
 
 - JPA와 생성자

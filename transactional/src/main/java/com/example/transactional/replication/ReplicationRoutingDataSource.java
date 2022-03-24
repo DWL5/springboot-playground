@@ -1,7 +1,5 @@
 package com.example.transactional.replication;
 
-import static java.util.stream.Collectors.toList;
-
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
 import org.springframework.transaction.support.TransactionSynchronizationManager;
 
